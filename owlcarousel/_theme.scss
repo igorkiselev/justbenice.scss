@@ -1,0 +1,86 @@
+
+.owl-theme {
+	.owl-dots,
+	.owl-nav{
+		position: absolute;
+		
+		transition:opacity 1s;
+		
+		opacity:0;
+		
+		width:100%;
+	}
+	
+	
+	&:hover .owl-dots{
+		opacity: 1;
+	}
+	
+	.owl-nav {
+		margin-top: 10px;
+		text-align: center;
+		display:none;
+		-webkit-tap-highlight-color: transparent;
+
+		[class*='owl-'] {
+			color: #fff;
+			margin: 5px;
+			padding: 4px 7px;
+			background: #000;
+			display: inline-block;
+			cursor: pointer;
+			border-radius: 3px;
+			
+			&:hover {
+				background: #000;
+				color: #000;
+				text-decoration: none;
+			}
+		}
+		.disabled {
+			opacity: 0.5;
+			cursor: default;
+		}
+	}
+
+	// Styling dots
+	.owl-nav.disabled + .owl-dots {
+		margin-top: 10px;
+	}
+
+	.owl-dots {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+		bottom: 0px;
+		
+		
+		.owl-dot {
+			
+			display: inline-block;
+			
+			zoom: 1;
+			
+			*display: inline;
+			
+			
+			span {
+				width: 7px;
+				height: 7px;
+				margin: 15px 10px;
+				background: #fff;
+				display: block;
+				-webkit-backface-visibility: visible;
+				transition: opacity 200ms ease;
+				border-radius: 30px;
+				opacity:0.5;
+			}
+
+			&.active,
+			&:hover {
+				span {
+					opacity:1;
+				}
+			}
+		}
+	}
+}
