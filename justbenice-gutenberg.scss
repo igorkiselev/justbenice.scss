@@ -22,12 +22,12 @@ html {
   box-sizing: inherit;
 }
 
-
+//@import "custom/normalize";
 
 @import "functions";
 @import "variables";
-@import "mixins/hover";
-@import "reboot";
+//@import "mixins/hover";
+//@import "reboot";
 
 
 @import "mixins/breakpoints";
@@ -35,19 +35,16 @@ html {
 @import "mixins/grid";
 
 @import "grid";
-@import "utilities/display";
+//@import "utilities/display";
 @import "utilities/flex";
 @import "utilities/spacing";
 @import "utilities/align";
-@import "utilities/position";
-@import "utilities/display";
+//@import "utilities/position";
+//@import "utilities/display";
 @import "utilities/sizing";
 
-@import "mixins/image";
-@import "images";
+//@import "mixins/image";
+//@import "images";
 
-@import "owlcarousel/owlcarousel";
 
-@import "custom/pace";
-@import "custom/textalign";
 @import "custom/aspectratio";
